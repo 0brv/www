@@ -41,5 +41,9 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"phosphor-svelte": "^3.0.1",
+		"typewriter-effect": "^2.22.0"
 	}
 }

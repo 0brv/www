@@ -136,7 +136,7 @@
 </div>
 
 {#snippet colon()}
-	<i aria-hidden="true" class="relative bottom-3 text-lg leading-none md:bottom-5 md:text-2xl">:</i>
+	<span aria-hidden="true" class="relative bottom-3 text-lg leading-none md:bottom-5 md:text-2xl">:</span>
 {/snippet}
 
 {#snippet count(front: number, back: number, flip: boolean, label: string)}
@@ -172,7 +172,7 @@
 	}
 
 	.counter-item span {
-		@apply absolute inset-x-0 w-full overflow-hidden text-center text-3xl md:text-5xl;
+		@apply absolute inset-x-0 w-full overflow-hidden text-center text-3xl font-extralight md:text-5xl;
 
 		height: 50%;
 		text-shadow: 0 1px 2px #333;

@@ -7,8 +7,6 @@ const NUM_STARS = 250;
 const COLORS = [
 	"255, 255, 255",
 	"255, 255, 255",
-	"255, 255, 255",
-	"255, 255, 255",
 	"200, 200, 0",
 	"200, 200, 0",
 	"255, 150, 150",
@@ -182,7 +180,8 @@ class Star {
 		this.opacity = opacity;
 		this.factor = 1;
 		this.increment = 0.002 + Math.random() * 0.008;
-		this.maxOpacity = 0.5 + Math.random() * 0.5;
+		// this.maxOpacity = 0.75 + Math.random() * 0.25;
+		this.maxOpacity = 1;
 		this.colorRGB = COLORS[Math.floor(Math.random() * COLORS.length)];
 		this.screenW = screenW;
 		this.screenH = screenH;

@@ -62,6 +62,6 @@
 	class={`fixed inset-0 transition-opacity duration-1000 ${starsVisible ? "opacity-100" : "opacity-0"}`}
 ></canvas>
 
-<div class="max-w-4xl mx-auto p-12 pt-32 md:pt-24 flex items-center justify-center">
+<div class="max-w-4xl mx-auto p-4 pt-32 relative md:pt-24 flex items-center justify-center">
 	{@render children()}
 </div>
