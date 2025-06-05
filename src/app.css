@@ -1,0 +1,34 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+:root {
+    --background-color: #000;
+    --text-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.brand {
+    background: linear-gradient(90deg, #fbe7c2, #bcabe5, #749edf, #94d7d9, #fbe7c2 50%, #ffffff00 75%, #ffffff00 100%) 150% center /
+    	200% 100% no-repeat;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: brand-gradient 6s forwards ease-in-out;
+}
+
+@keyframes brand-gradient {
+    75% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 0;
+        /*filter: drop-shadow(--alpha(var(--color-red-300) / 100%) 0px 0px 8px);*/
+        text-shadow: 0 0 12px --alpha(var(--color-amber-200) / 25%);
+    }
+}
