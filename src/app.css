@@ -18,20 +18,11 @@ body {
 }
 
 .brand {
-	background: linear-gradient(
-			90deg,
-			#fbe7c2,
-			#bcabe5,
-			#749edf,
-			#94d7d9,
-			#fbe7c2 50%,
-			#ffffff00 75%,
-			#ffffff00 100%
-		)
+	background: linear-gradient(90deg, #ffffff, #b8f6f6, #7ee7f7 50%, #ffffff00 75%, #ffffff00 100%)
 		150% center / 200% 100% no-repeat;
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
-	animation: brand-gradient 5s forwards ease-in-out;
+	animation: brand-gradient 3.5s forwards ease-in-out;
 }
 
 @keyframes brand-gradient {
@@ -41,5 +32,5 @@ body {
 }
 
 .Typewriter__cursor {
-    animation: Typewriter-cursor 1s 15 forwards !important;
+	animation: Typewriter-cursor 1s 15 forwards !important;
 }

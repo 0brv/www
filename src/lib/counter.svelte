@@ -136,7 +136,9 @@
 </div>
 
 {#snippet colon()}
-	<span aria-hidden="true" class="relative bottom-3 text-lg leading-none md:bottom-5 md:text-2xl">:</span>
+	<span aria-hidden="true" class="relative bottom-3 text-lg leading-none md:bottom-5 md:text-2xl">
+		:
+	</span>
 {/snippet}
 
 {#snippet count(front: number, back: number, flip: boolean, label: string)}
@@ -156,7 +158,7 @@
 	@reference "../app.css";
 
 	.counter-item {
-		@apply relative h-[64px] w-[64px] md:h-[90px] md:w-[90px] border border-neutral-950 rounded-xl;
+		@apply relative h-[64px] w-[64px] rounded-xl border border-neutral-950 md:h-[90px] md:w-[90px];
 	}
 
 	.counter-item::after {

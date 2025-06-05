@@ -16,10 +16,10 @@
 
 		setTimeout(() => {
 			mottoVisible = true;
-		}, 3500);
+		}, 2500);
 
 		writer
-			.pauseFor(3500)
+			.pauseFor(2500)
 			.typeString("Built in Silence.")
 			.pauseFor(250)
 			.typeString(" Engineered for Impact.")
@@ -37,7 +37,9 @@
 			.typeString("No Noise.")
 			.pauseFor(500)
 			.changeDelay(50)
-			.typeString(" Just Signal.")
+			.typeString(" Just ")
+			.typeString("<span style='color: #b8f6f6'>Signal</span")
+			.typeString(".")
 			.pauseFor(1000)
 			.start();
 	});
@@ -53,7 +55,7 @@
 	</div>
 
 	{#if counterVisible}
-		<div class="flex items-center justify-center" transition:fade={{ delay: 13500 }}>
+		<div class="flex items-center justify-center" transition:fade={{ delay: 13000, duration: 1000 }}>
 			<Counter />
 		</div>
 	{/if}
