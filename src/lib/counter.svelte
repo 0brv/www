@@ -3,7 +3,7 @@
 	import { fade } from "svelte/transition";
 
 	const now = new Date().getTime();
-	const listedAt = new Date("2025-06-20T17:00:00Z").getTime();
+	const listedAt = new Date("2025-07-25T17:00:00Z").getTime();
 
 	let timeLeft = Math.round((listedAt - now) / 1000);
 	const listed = timeLeft <= 0;
